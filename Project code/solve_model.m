@@ -1,4 +1,4 @@
-function [r_eq, T_eq, Sol] = solve_model(params, grid)
+function [r_eq, T_eq, Sol, iter] = solve_model(params, grid)
 % SOLVE_MODEL Solves the Aiyagari model with redistribution using Broyden's method
 %   This function implements the algorithm described in the assignment:
 %   1. Guess r and T
@@ -19,10 +19,10 @@ function [r_eq, T_eq, Sol] = solve_model(params, grid)
 
 % Set tolerance for convergence
 tolerance = 1e-4;
-max_iter = 70;
+max_iter = 100;
 
 % Initialize Broyden's method
-% x = [r, T]
+% x = [r; T]
 x = [0.03; 0.05]; % Initial guess
 x_old = x;
 f_old = market_clearing(x, grid, params);
@@ -36,13 +36,13 @@ for iter = 1:max_iter
     
     % Check for convergence
     if max(abs(f)) < tolerance
-        disp(['Convergence achieved! Iteration: ', num2str(iter)]);
+        % disp(['Convergence achieved! Iteration: ', num2str(iter)]);
         break;
     end
     
     % Report current state
-    disp(['Iteration: ', num2str(iter), ', r = ', num2str(x(1)), ...
-          ', T = ', num2str(x(2)), ', Errors = [', num2str(f(1)), ', ', num2str(f(2)), ']']);
+    % disp(['Iteration: ', num2str(iter), ', r = ', num2str(x(1)), ...
+    %       ', T = ', num2str(x(2)), ', Errors = [', num2str(f(1)), ', ', num2str(f(2)), ']']);
     
     % Compute step using Broyden's method
     s = x - x_old;
@@ -61,10 +61,10 @@ for iter = 1:max_iter
     x = x - B\f;
     
     % Ensure r is within reasonable bounds
-    x(1) = max(min(x(1), params.rho - 0.0001), -params.del + 0.0001);
+    x(1) = max(min(x(1), params.rho - 0.001), -params.del + 0.001);
     
     % Ensure T is positive
-    x(2) = max(x(2), 0.0001);
+    x(2) = max(x(2), 0.001);
 end
 
 % Final equilibrium values

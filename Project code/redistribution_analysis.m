@@ -32,7 +32,7 @@ for i = 1:num_rates
     disp(['Solving model for τ = ', num2str(params.tau*100), '%']);
     
     % Solve the model
-    [r_eq, T_eq, Sol] = solve_model(params, grid);
+    [r_eq, T_eq, Sol, iter_needed] = solve_model(params, grid);
     
     % Store results
     results.r(i) = Sol.net_return;
@@ -58,12 +58,13 @@ for i = 1:num_rates
     
     disp(['Completed τ = ', num2str(params.tau*100), '%, r = ', num2str(r_eq, '%.4f'), ...
           ', T = ', num2str(T_eq, '%.4f'), ', Y = ', num2str(Sol.Agg_output, '%.4f')]);
-end
+    disp(['Converged in ',num2str(iter_needed), ' itetarions']);
 
+end
 % Restore original tax rate
 params.tau = original_tau;
 
-% Plot results
+%% Plot results
 figure('Position', [100, 100, 1200, 800]);
 
 % Create a 3x3 subplot
@@ -116,33 +117,12 @@ xlabel('Tax Rate (%)');
 ylabel('Variance');
 grid on;
 
-% Add a text box explaining the results
-subplot(3, 3, [8,9]);
-axis off;
-text(0.1, 0.9, 'Summary of Redistribution Analysis:', 'FontSize', 14, 'FontWeight', 'bold');
-text(0.1, 0.8, '1. Taxation affects consumption risk and savings incentives', 'FontSize', 12);
-text(0.1, 0.7, '2. Higher tax rates reduce capital accumulation', 'FontSize', 12);
-text(0.1, 0.6, '3. There is a trade-off between equity and efficiency', 'FontSize', 12);
-text(0.1, 0.5, '4. Transfers provide insurance against income shocks', 'FontSize', 12);
-text(0.1, 0.4, '5. Very high tax rates are detrimental to output', 'FontSize', 12);
-
-% Adjust spacing and save
-tight_spacing = 0.03;
-loose_spacing = 0.07;
-for i = 1:9
-    pos = get(subplot(3,3,i), 'Position');
-    if ismember(i, [8,9])
-        set(subplot(3,3,i), 'Position', [pos(1) pos(2) pos(3) pos(4)]);
-    else
-        set(subplot(3,3,i), 'Position', [pos(1) pos(2) pos(3)-tight_spacing pos(4)-loose_spacing]);
-    end
-end
 
 path_n_date = [pwd,'\Plots\',datestr(now, 'yyyy-mm-dd-HH-MM'),'\'];
 if ~exist(path_n_date, 'dir')
     mkdir(path_n_date);
 end
-Filename = ['redistribution_analysis_from_',num2srt(tax_rates(1)*100),'_to_',num2srt(tax_rates(-1)*100)];
+Filename = ['redistribution_analysis_from_',num2str(tax_rates(1)*100),'_to_',num2str(tax_rates(end)*100)];
 
 saveas(gcf, fullfile(path_n_date, [Filename,'.png']));
 saveas(gcf, fullfile(path_n_date, [Filename,'.fig']));  % For future edits

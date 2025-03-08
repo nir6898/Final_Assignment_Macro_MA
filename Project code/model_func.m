@@ -170,7 +170,7 @@ for vfit = 1:maxit_vf
 
     % Convergence check
     if dist_V < tol_vf
-        disp(['VF solved. Error was = ', num2str(dist_V)]);
+        % disp(['VF solved. Error was = ', num2str(dist_V)]);
         flag_vf_converged = 1;
         break;
     end
@@ -208,10 +208,10 @@ h = G\c;
 % Calculate total employed and unemployed mass
 employed_mass = sum(h(1:(params.zp_num*knum)));
 unemployed_mass = sum(h((params.zp_num*knum+1):end));
-fprintf('Employed mass: %.4f, Unemployed mass: %.4f\n', employed_mass, unemployed_mass);
+% fprintf('Employed mass: %.4f, Unemployed mass: %.4f\n', employed_mass, unemployed_mass);
 
 % Check that the distribution sums to approximately 1
-disp(['Sum of distribution: ', num2str(sum(h))]);
+% disp(['Sum of distribution: ', num2str(sum(h))]);
 
 %==================Storing policies===================
 Sol.V = Vn;
