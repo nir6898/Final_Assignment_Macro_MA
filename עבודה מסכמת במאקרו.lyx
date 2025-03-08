@@ -1,0 +1,1007 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%%% Set Hebrew and English fonts
+\setmonofont[Script=Hebrew]{Miriam Mono CLM}
+\newfontfamily{\englishfont}[Ligatures=TeX]{TeX Gyre Pagella}
+%\newfontfamily{\englishfont}[Ligatures=TeX]{Latin Modern Roman}
+% Proper font size in math mode.
+\setmathrm[Ligatures=TeX]{Latin Modern Math}
+
+%%% Another way is to set just the Hebrew fonts:
+%\newfontfamily\hebrewfont[Script=Hebrew]{David CLM}
+%\newfontfamily\hebrewfonttt[Script=Hebrew]{Miriam Mono CLM}
+%\newfontfamily\hebrewfontsf[Script=Hebrew]{Simple CLM}
+% consider using \usepackage{iffont}
+
+%%% Sets both header and footer
+\fancyhf{} % sets to nothing
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\textup{\thepage}}
+
+\renewcommand*{\refname}{Bibliography}
+
+%%% Some alternative styles
+\ifcsname question\endcsname
+  \theoremstyle{definition}
+  \newtheorem{quesh}[thm]{שאלה}
+  \renewenvironment{question}{\begin{quesh}}{\end{quesh}}
+\else
+\fi
+\ifcsname sol*\endcsname
+  \theoremstyle{remark}
+  \newtheorem*{emphsol*}{פתרון}
+  \renewenvironment{sol*}{\begin{emphsol*}}{\end{emphsol*}}
+\else
+\fi
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "Hadasim CLM"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 1
+\output_sync_macro "\synctex=1"
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 0 2 5 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מאקרו עבודה מסכמת
+\end_layout
+
+\begin_layout Author
+שרון לוי ואיתי דיין
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+יש מקטע רציף ממידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של אינסוף משקי בית הממקסמים תועלת מהוונת מצריכה יש להם תשואת עבודה שמשלבת
+ סטוכסטיות ומסומנת ב-
+\begin_inset Formula $z$
+\end_inset
+
+ שמסופקת באופן קשיח לפירמה ומקבלים תזרים שכר של 
+\begin_inset Formula $w\times z$
+\end_inset
+
+.
+ משקי הבית בוחרים צריכה על מנת לבטח נגד שוקים פיננסיים עתידיים בכפוף למגבלת
+ נזילות 
+\begin_inset Formula $a\geq-a$
+\end_inset
+
+.
+ בעיית ההחלטה שלהם יכולה להסתכם עם משוואת 
+\begin_inset Formula $HJB$
+\end_inset
+
+ הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho V(a,z)=max_{c}u(c)+\frac{\partial V}{\partial a}s(a,v)+A_{z}V(a,z)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\rho$
+\end_inset
+
+ הוא מקדם ה-
+\begin_inset Formula $discount\,rate$
+\end_inset
+
+, 
+\begin_inset Formula $A_{z}$
+\end_inset
+
+ גנרטור של תהליך סטוכסטי שמגביל את 
+\begin_inset Formula $z$
+\end_inset
+
+ באופן שיפורט.
+\end_layout
+
+\begin_layout Standard
+ה-
+\begin_inset Formula $Household\,asset\,accumulation\,equation$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s(a,z)=\frac{\partial a}{\partial t}=ra+zw(1-\tau)+T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא התשואה של הנכסים, 
+\begin_inset Formula $\tau$
+\end_inset
+
+ מס פרופורציונלי על כל ההכנסות מהעבודה, ו-
+\begin_inset Formula $T$
+\end_inset
+
+ הוא 
+\begin_inset Formula $lump-sum$
+\end_inset
+
+ מהממשל.
+\end_layout
+
+\begin_layout Standard
+כל משקי הבית מקבלים 
+\begin_inset Formula $T$
+\end_inset
+
+ ללא קשר ל-
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבחין כי הממשל השית מס פרוגרסיבי כאשר משק בית משלם 
+\begin_inset Formula $z\times w\times\gamma-T$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $z$
+\end_inset
+
+ גבוה גורר תשלום ו-
+\begin_inset Formula $z$
+\end_inset
+
+ נמוך גורר רק 
+\begin_inset Quotes eld
+\end_inset
+
+הטבות
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפירמה פועלת בעזרת פונקציית קוב דאגלס שמייצרת מוצר נומרר יחיד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y=K^{a}Z^{1-a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $K$
+\end_inset
+
+ - הון, ו-
+\begin_inset Formula $Z$
+\end_inset
+
+ - עבודה אגרגטיבית.
+ הפירמה משלמת שכר 
+\begin_inset Formula $w$
+\end_inset
+
+ לכל יחידה של תשומת עבודה וה-
+\begin_inset Formula $gross\,rental\,rate$
+\end_inset
+
+ הוא 
+\begin_inset Formula $r+\delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי ניכוי שוק ההון הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}ag(a,z)dadz=K
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שוויון התזרימים פנימה והחוצה מהממשל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=T=Government\,spending
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סעיף א:
+\end_layout
+
+\begin_layout Standard
+מגבלת התקציב הממשלתית למעשה משיתה את חלוקת ה-
+\begin_inset Formula $Lamp\,sum$
+\end_inset
+
+ על המס מהאזרחים במלואה, ובפרט היא תלויה בהתפלגות תשואות ה-
+\begin_inset Formula $labor$
+\end_inset
+
+ האגרגטיביות ובמגבלות הנזילות על החסכונות של האזרחים.
+\end_layout
+
+\begin_layout Standard
+כתוצאה מכך, הממשלה יכולה לבחור 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ו-
+\begin_inset Formula $T$
+\end_inset
+
+ שמקיימים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{T}{\gamma}=\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בלבד - כלומר יש מגבלה על היחס בין ה-
+\begin_inset Formula $Lamp\,sum$
+\end_inset
+
+ לגובה המס הנגבה מהאזרחים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סעיף ב:
+\end_layout
+
+\begin_layout Standard
+במודל זה, שיווי משקל הוא:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- פונקציות ערך 
+\begin_inset Formula $V(a,z)$
+\end_inset
+
+ עבור משקי הבית
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- פונקציות 
+\begin_inset Formula $policy$
+\end_inset
+
+ 
+\begin_inset Formula $c(a)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מחירים - 
+\begin_inset Formula $r,w,\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- כמויות מצרפיות 
+\begin_inset Formula $Z,K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- פונקציית התפלגות 
+\begin_inset Formula $g(a,z)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר הלה מקיימים:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בהינתן המחירים 
+\begin_inset Formula $r,w$
+\end_inset
+
+ הנתונים, פונקציית הערך 
+\begin_inset Formula $V(a,z)$
+\end_inset
+
+ מחזירה את הערך המקסימלי שמשקי הבית יכולים לקבל )כפי שתואר במשוואות 
+\begin_inset Formula $HJB$
+\end_inset
+
+ שלעיל( כאשר פונקציית המדיניות 
+\begin_inset Formula $c(a)$
+\end_inset
+
+ פותרת את בעיה זו.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- הפירמה מבצעת אופטימיזציה - קרי הכמויות האגרגטיביות המבוקשות 
+\begin_inset Formula $Z,K$
+\end_inset
+
+ ממקסמות את רווחי הפירמה בכפוף למחירים 
+\begin_inset Formula $r,w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- השווקים מתנכים כלומר 
+\begin_inset Formula $\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}ag(a,z)dadz=K,\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=Z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $g$
+\end_inset
+
+ היא 
+\begin_inset Formula $invariant\,distribution\,induced\,by\,the\,KFE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מתקיים גם נכיון שווקים ביחס להנכסות הוצאות הממשלה כלומר 
+\begin_inset Formula $\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משקי הבית - לוקחים את המס 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ואת 
+\begin_inset Formula $T$
+\end_inset
+
+ כנתונים הם בוחרים את 
+\begin_inset Formula $c$
+\end_inset
+
+ ו-
+\begin_inset Formula $s$
+\end_inset
+
+ בהתאם אליהם.
+\end_layout
+
+\begin_layout Standard
+הפירמה והממשלה משחקות משחק על 
+\begin_inset Formula $T$
+\end_inset
+
+ ו-
+\begin_inset Formula $\gamma$
+\end_inset
+
+ שכן לשתיהן יש השפעה עליהם - הפירמה כאשר ממקסמת את בעייתה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סעיף ג:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi=max_{K,Z}Y(K,Z)-K(r+\delta)-Zw
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Pi=max_{K,Z}K^{a}Z^{1-a}-K(r+\delta)-Zw
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי 
+\begin_inset Formula $K$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+aK^{a-1}Z^{1-a}=(r+\delta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי 
+\begin_inset Formula $Z$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(1-a)K^{a}Z^{-a}=w
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
