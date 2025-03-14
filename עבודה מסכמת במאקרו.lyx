@@ -123,7 +123,7 @@ theorems-ams-extended
 \end_layout
 
 \begin_layout Author
-שרון לוי ואיתי דיין
+שרון לוי, ניר ויג ואיתי דיין
 \end_layout
 
 \begin_layout Standard
@@ -245,10 +245,6 @@ theorems-ams-extended
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 כאשר 
 \begin_inset Formula $\rho$
 \end_inset
@@ -321,26 +317,18 @@ s(a,z)=\frac{\partial a}{\partial t}=ra+zw(1-\tau)+T
 
 \begin_layout Standard
 נבחין כי הממשל השית מס פרוגרסיבי כאשר משק בית משלם 
-\begin_inset Formula $z\times w\times\gamma-T$
+\begin_inset Formula $z\times w\times\tau-T$
 \end_inset
 
-, כלומר 
+, כלומר, 
 \begin_inset Formula $z$
 \end_inset
 
- גבוה גורר תשלום ו-
+ גבוה גורר סך הכל תשלום לממשלה ו-
 \begin_inset Formula $z$
 \end_inset
 
- נמוך גורר רק 
-\begin_inset Quotes eld
-\end_inset
-
-הטבות
-\begin_inset Quotes erd
-\end_inset
-
-.
+ נמוך גורר סך הכל הכנסה מהממשלה.
 \end_layout
 
 \begin_layout Standard
@@ -363,11 +351,11 @@ Y=K^{a}Z^{1-a}
 \begin_inset Formula $K$
 \end_inset
 
- - הון, ו-
+ - הון מצרפי, ו-
 \begin_inset Formula $Z$
 \end_inset
 
- - עבודה אגרגטיבית.
+ - עבודה מצרפית.
  הפירמה משלמת שכר 
 \begin_inset Formula $w$
 \end_inset
@@ -412,7 +400,7 @@ Y=K^{a}Z^{1-a}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=T=Government\,spending
+Government\,income=\tau\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=T=Government\,spending
 \]
 
 \end_inset
@@ -439,21 +427,22 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \end_layout
 
 \begin_layout Standard
-כתוצאה מכך, הממשלה יכולה לבחור 
-\begin_inset Formula $\gamma$
+כתוצאה מכך, על מנת שהממשלה לא תרוויח או תפסיד כסף, הממשלה יכולה לבחור רק
+ 
+\begin_inset Formula $\tau$
 \end_inset
 
  ו-
 \begin_inset Formula $T$
 \end_inset
 
- שמקיימים:
+ כך שהיחס ביניהם מקיים:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{T}{\gamma}=\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz
+\frac{T}{\tau}=\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz
 \]
 
 \end_inset
@@ -462,11 +451,12 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \end_layout
 
 \begin_layout Standard
-בלבד - כלומר יש מגבלה על היחס בין ה-
+כלומר, יש מגבלה על היחס בין ה-
 \begin_inset Formula $Lamp\,sum$
 \end_inset
 
- לגובה המס הנגבה מהאזרחים.
+ לגובה המס הנגבה מהאזרחים שנובעת מהדרישה לשיווין בין ההכנסות להוצאות של
+ הממשלה.
 \end_layout
 
 \begin_layout Standard
@@ -483,7 +473,7 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \end_layout
 
 \begin_layout Standard
-במודל זה, שיווי משקל הוא:
+במודל זה, שיווי משקל מורכב מ:
 \end_layout
 
 \begin_layout Standard
@@ -516,11 +506,11 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- פונקציות ערך 
+- פונקציות ערך עבור משקי הבית: 
 \begin_inset Formula $V(a,z)$
 \end_inset
 
- עבור משקי הבית
+ 
 \end_layout
 
 \begin_layout Standard
@@ -553,11 +543,7 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- פונקציות 
-\begin_inset Formula $policy$
-\end_inset
-
- 
+- פונקציות מדיניות צריכה: 
 \begin_inset Formula $c(a)$
 \end_inset
 
@@ -594,7 +580,7 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- מחירים - 
+- מחירים: 
 \begin_inset Formula $r,w,\delta$
 \end_inset
 
@@ -631,7 +617,7 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- כמויות מצרפיות 
+- כמויות מצרפיות: 
 \begin_inset Formula $Z,K$
 \end_inset
 
@@ -668,7 +654,7 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- פונקציית התפלגות 
+- פונקציית התפלגות: 
 \begin_inset Formula $g(a,z)$
 \end_inset
 
@@ -683,7 +669,7 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \end_layout
 
 \begin_layout Standard
-כאשר הלה מקיימים:
+כאשר אלה מקיימים:
 \end_layout
 
 \begin_layout Standard
@@ -716,23 +702,23 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- בהינתן המחירים 
+- בהינתן מחירים 
 \begin_inset Formula $r,w$
 \end_inset
 
- הנתונים, פונקציית הערך 
-\begin_inset Formula $V(a,z)$
-\end_inset
-
- מחזירה את הערך המקסימלי שמשקי הבית יכולים לקבל )כפי שתואר במשוואות 
-\begin_inset Formula $HJB$
-\end_inset
-
- שלעיל( כאשר פונקציית המדיניות 
+, פונקציית המדיניות 
 \begin_inset Formula $c(a)$
 \end_inset
 
- פותרת את בעיה זו.
+ בשיווי משקל מביאה למקסימום את פונקציית הערך 
+\begin_inset Formula $V(a,z)$
+\end_inset
+
+ עבור כל משקי הבית )כפי שתואר במשוואות 
+\begin_inset Formula $HJB$
+\end_inset
+
+ שלעיל(.
 \end_layout
 
 \begin_layout Standard
@@ -765,12 +751,12 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- הפירמה מבצעת אופטימיזציה - קרי הכמויות האגרגטיביות המבוקשות 
+- הפירמה גם כן מבצעת אופטימיזציה, קרי הכמויות האגרגטיביות המבוקשות 
 \begin_inset Formula $Z,K$
 \end_inset
 
  ממקסמות את רווחי הפירמה בכפוף למחירים 
-\begin_inset Formula $r,w$
+\begin_inset Formula $r,w\text{,\ensuremath{\delta}}$
 \end_inset
 
 .
@@ -806,7 +792,12 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- השווקים מתנכים כלומר 
+- עבור הביקוש 
+\begin_inset Formula $Z,K$
+\end_inset
+
+ מתקבל כי השווקים מתנכים.
+ כלומר 
 \begin_inset Formula $\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}ag(a,z)dadz=K,\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=Z$
 \end_inset
 
@@ -848,7 +839,7 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \end_inset
 
  היא 
-\begin_inset Formula $invariant\,distribution\,induced\,by\,the\,KFE$
+\begin_inset Formula $invariant\:distribution\,induced\,by\,the\,KFE$
 \end_inset
 
 
@@ -884,8 +875,8 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \uwave default
 \noun default
 \color inherit
-- מתקיים גם נכיון שווקים ביחס להנכסות הוצאות הממשלה כלומר 
-\begin_inset Formula $\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=T$
+- מתקיים גם נכיון שווקים ביחס להנכסות והוצאות הממשלה כלומר 
+\begin_inset Formula $\tau\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=T$
 \end_inset
 
 
@@ -899,32 +890,28 @@ Government\,income=\gamma\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\i
 \end_layout
 
 \begin_layout Standard
-משקי הבית - לוקחים את המס 
-\begin_inset Formula $\gamma$
+בהתייחס לערכי 
+\begin_inset Formula $T\text{,\ensuremath{\tau}}$
+\end_inset
+
+, משקי הבית לוקחים את המס 
+\begin_inset Formula $\tau$
 \end_inset
 
  ואת 
 \begin_inset Formula $T$
 \end_inset
 
- כנתונים הם בוחרים את 
-\begin_inset Formula $c$
-\end_inset
-
- ו-
-\begin_inset Formula $s$
-\end_inset
-
- בהתאם אליהם.
+ כנתונים הם בוחרים את הצריכה והחיסכון בהתאם אליהם.
 \end_layout
 
 \begin_layout Standard
-הפירמה והממשלה משחקות משחק על 
+מצד שני, הפירמה והממשלה משחקות משחק על 
 \begin_inset Formula $T$
 \end_inset
 
  ו-
-\begin_inset Formula $\gamma$
+\begin_inset Formula $\tau$
 \end_inset
 
  שכן לשתיהן יש השפעה עליהם - הפירמה כאשר ממקסמת את בעייתה.
@@ -1001,6 +988,1118 @@ aK^{a-1}Z^{1-a}=(r+\delta)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+חלק
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+פתרון:
+\end_layout
+
+\begin_layout Standard
+משוואת 
+\begin_inset Formula $HJB$
+\end_inset
+
+ כפונקציה של 
+\begin_inset Formula $a,z_{p},I_{E}$
+\end_inset
+
+ היא:
+\end_layout
+
+\begin_layout Standard
+עבור משקי בית בתעסוקה, כלומר כאשר 
+\begin_inset Formula $I_{E}=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho V(a,z_{p},1)=max_{c}u(c)+\frac{\partial V}{\partial a}s(a,v)+A_{z}V(a,z)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ρV(a,z_{p},1)=max_{c}\{u(c)+(∂V/∂a)[ra+z_{p}w(1-τ)+T-c]+
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+λ_{EU}[V(a,z_{p},0)-V(a,z_{p},1)]+%λ_{p}∑_{j}[V(a,z_{p_{j}},1)-V(a,z_{p},1)]/z_{p_{n}}um
+\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכאשר הם במצב אבטלה כלומר כאשר 
+\begin_inset Formula $I_{E}=0$
+\end_inset
+
+ מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+%ρV(a,z_{p},0)=max_{c}\{u(c)+(∂V/∂a)[ra+T-c]+
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+%λ_{UE}[V(a,z_{p},1)-V(a,z_{p},0)]+
+%λ_{p}∑_{j}[V(a,z_{p_{j}},0)-V(a,z_{p},0)]/z_{p_{n}}um
+\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho$
+\end_inset
+
+ - מקדם ההיוון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V(a,z_{p},I_{E})$
+\end_inset
+
+ פונקציית הערך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u(c)$
+\end_inset
+
+ - פונקציית התועלת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ra+z_{p}\times w\times(1-\tau)+T$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - ההכנסה של משק בית במצב תעסוקה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ra+T$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ - ההכנסה של משק בית שאינו מועסק
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{EU}$
+\end_inset
+
+ ההאזארד מתעסוקה לאבטלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{UE}$
+\end_inset
+
+ - ההאזארד מאבטלה לתעסוקה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda_{p}$
+\end_inset
+
+ - ההאזארד לשינוי ברכיב התעסוקה הקבוע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z_{p}\,num$
+\end_inset
+
+ - מספר המצבים האפשריים של הכנסה קבועה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+פתרון:
+\end_layout
+
+\begin_layout Standard
+נתחיל עם הגדרת ה-
+\begin_inset Formula $CDF$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+%Prob{a≤a',z_{p}=z_{p}',I_{E}=I_{E}'}=\int_{-∞}^{a'}\int_{z_{p}'}\int_{I_{E}}g(a,z_{p},I_{E},t)da\,dz_{p}\,dI_{E}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר השינוי בהסתברות על פני אינטרוול זמן 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+%Prob{a_{t+∆t}≤a',z_{p_{t+∆t}}=z_{p}',I_{E_{t+∆t}}=I_{E}'}-Prob{a_{t}≤a',z_{p_{t}}=z_{p}',I_{E_{t}}=I_{E}'}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר את שטף השינוי ניתן לחלק לכמה חלקים:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שינוי בנכסים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial g}{\partial t}=\frac{-\partial}{\partial a}[s(a,z_{p},I_{E})\times g(a,z_{p},I_{E},t)]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שינוי בסטטוס התעסוקה:
+\end_layout
+
+\begin_layout Standard
+עבור מועסקים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{UE}\times g(a,z_{p},0,t)-\lambda_{EU}\times g(a,z_{p},1,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור מובטלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{EU}\times g(a,z_{p},1,t)-\lambda_{UE}\times g(a,z_{p},0,t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שינויים בהכנסה הקבועה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda_{p}\Sigma_{j}[\frac{g(a,z_{p_{j}},I_{E},t)}{z_{p}num}]-\lambda_{p}\times g(a,z_{p},I_{E},t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Quotes eld
+\end_inset
+
+נחבר
+\begin_inset Quotes erd
+\end_inset
+
+ את הכל, וכאשר 
+\begin_inset Formula $\Delta t\rightarrow0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $I_{E}=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+%0=-∂/∂a[s(a,z_{p},1)×g(a,z_{p},1)]+λ_{UE}×g(a,z_{p},0)-λ_{EU}×g(a,z_{p},1)
+%+λ_{p}∑_{j}[g(a,z_{p_{j}},1)/z_{p_{num}}]-λ_{p}×g(a,z_{p},1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $I_{E}=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+%0=-∂/∂a[s(a,z_{p},0)×g(a,z_{p},0)]+λ_{EU}×g(a,z_{p},1)-λ_{UE}×g(a,z_{p},0)
+%+λ_{p}∑_{j}[g(a,z_{p_{j}},0)/z_{p_{num}}]-λ_{p}×g(a,z_{p},0)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובכתיב מטריציוני ניתן לכתוב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A'g=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $A'$
+\end_inset
+
+ הוא האופרטור מ-
+\begin_inset Formula $HJB$
+\end_inset
+
+ ו-
+\begin_inset Formula $g$
+\end_inset
+
+ הוא וקטור כל ההתפלגויות האפשריות במרחב המצבים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בקוד
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\end_layout
+
+\begin_layout Standard
+תנאי העצירה המוגדר בשלב )f( מכיל בתוכו שני תנאים הכרחיים לשיווי משקל של
+ השוק, נכיון שווקים )היצע שווה לביקוש( ושיווי משקל של הכנסות הממשלה ממיסים
+ )
+\begin_inset Formula $T\text{,\tau}$
+\end_inset
+
+ מקיימים שוויון בין הכנסות והוצאות הממשלה(.
+ רק כאשר שני התנאים קרובים מספיק לשוויון מלא )בהתאם לטולרנס( ניתן להגיד
+ ששיווי המשקל התכנס ופתרון התקבל.
+ כמו כן, ככל שה-
+\begin_inset Formula $tolerance$
+\end_inset
+
+ נמוך יותר, כלומר 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ קטן יותר, נדרוש התכנסות מדויקת יותר.
+ מתוך הנחת הרציפות, נקבל כי לכל ערך של 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ קיימת נקודה קרובה מספיק לשיווי המשקל שתקיים את תנאי העצירה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Downloads/pasted3.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Downloads/pasted4.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Downloads/pasted5.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחין - המטריצה דלילה היא התקבלה מתהליך הדיסקרטיזציה שנועד לפתור את מערכת
+ המשוואות של 
+\begin_inset Formula $HJB$
+\end_inset
+
+ שהצגנו.
+ הדבר נובע מהעובדה כי כל נקודה במטריצת המצבים תלויה רק במצבים הסמוכים אליה
+ - השינויים בפונקציית הערך מושפעים משינויים בעושר ובמצב ההכנסה של משקי הבית
+ הקרובים.
+ למשל, משק בית לא יכול לקפוץ מהרבה הכנסה למעט באופן מיידי, או מעושר מסוים
+ לרמת עושר שאינה סמוכה, על כך החיבור בקווים הסמוכים.
+ המבנה הדליל של המטריצה מקל על החישוב עצמו ומאפשר לפתור את המערכת באמצעות
+ אלגוריתמים שמנצלים דלילות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+;
+\begin_inset Graphics
+	filename ../../Downloads/pasted6.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Downloads/pasted7.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Downloads/pasted8.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../Downloads/pasted9.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סעיף א:
+\end_layout
+
+\begin_layout Standard
+הכוונה ב-
+\begin_inset Formula $Consumption\,risk$
+\end_inset
+
+ לאי הוודאות המתקיימת בצריכת משקי הבית בשל תנודות בהכנסות, מיסוי וכו...
+\end_layout
+
+\begin_layout Standard
+נבחין כי גרף 
+\begin_inset Formula $g$
+\end_inset
+
+ מראה קשר ישיר בין השונות בצריכה לבין גובה המס.
+\end_layout
+
+\begin_layout Standard
+ככל שהמס גבוה יותר, השונות בהכנסות הולכת וקטנה.
+ ניתן לייחס זאת לכך שככל שהמס גבוה יותר כך מאידך יש גם יותר העברות 
+\begin_inset Formula $Lump\,sum$
+\end_inset
+
+ לאזרחים ובאופן פרוגרסיבי למשקי הבית העניים יותר.
+\end_layout
+
+\begin_layout Standard
+במצב זה, השונות בצריכה בין משקי הבית השונים קטנה יותר - משקי הבית העניים
+ יותר עשויים להיות רגישים פחות לאי הוודאות, כי יש להם הכנסה בטוחה, משקי
+ הבית העשירים יותר, רגישים יותר - יש התכנסות לשונות מסוימת.
+\end_layout
+
+\begin_layout Standard
+אולם כאשר המס נמוך יותר, ומשום התפלגות ההכנסות, משקי הבית העשירים רגישים
+ פחות לאי וודאות ולסיכון, ועל כן יכולים לצרוך יותר, בעוד העניים רגישים יותר
+ וצורכים פחות, בכך השונות גדלה.
+\end_layout
+
+\begin_layout Standard
+במקביל, מגרף 
+\begin_inset Formula $a$
+\end_inset
+
+ ניתן לראות כי הצריכה האגרגטיבית רגישה כולה לעלייה במס, ניתן להבחין כי באחוזי
+ מס גבוהים במיוחד )להוציא את הקצה הימני( הצריכה האגרגטיבית קטנה מהר יותר
+ - ניתן ממש להבחין בשני שיפועים.
+\end_layout
+
+\begin_layout Standard
+ניתן אולי לשער כי החל משיעורי מס מסוימים, משקי הבית העשירים יותר נעשים בעצמם
+ רגישים יותר לאי הוודאות שמתבטאת בצריכה.
+\end_layout
+
+\begin_layout Standard
+ניתן לראות כי המעבר חד באופן יחסי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סעיף ב:
+\end_layout
+
+\begin_layout Standard
+נבחין כי ככל שהמס גבוה יותר, גרף 
+\begin_inset Formula $b$
+\end_inset
+
+ מראה כי העושר האגרגטיבי הולך ופוחת, כאשר החל משיעור מסוים, קצב דעיכתו משתנה
+ ונעשה גבוה אף יותר.
+ הדבר נגרם משום שמס גבוה יותר מצמצם את ההכנסה הפיזיבילית לאחר מיסוי שניתן
+ לחסוך.
+ ה-
+\begin_inset Formula $lump\,sum$
+\end_inset
+
+ הגבוה גורם לצמצום של הצורך ב
+\begin_inset Quotes erd
+\end_inset
+
+חסכון
+\begin_inset Quotes erd
+\end_inset
+
+.
+ במקביל מגרף 
+\begin_inset Formula $d$
+\end_inset
+
+ ניתן להבחין כי ה-
+\begin_inset Formula $net\,return$
+\end_inset
+
+ עולה עד שמשתטח באחוזי מס גבוהים.
+\end_layout
+
+\begin_layout Standard
+מאחר שההון האגרגטיבי קטן, הערך השולי של ההון גדל - הריבית וערך הכסף הולכים
+ וגדלים.
+\end_layout
+
+\begin_layout Standard
+ניתן לראות משחק בין סעיף א לב - ככל שהמס גבוה יותר, ההחזר מקטין את הסיכון
+ ואת החשש מאי הוודאות, אולם כך גם קטן הצורך בחסכון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סעיף ג:
+\end_layout
+
+\begin_layout Standard
+נוכל להבחין במספר לקחים -
+\end_layout
+
+\begin_layout Standard
+א - אמנם מס גבוה יותר מסייע לחלוקה מחדש של משאבים )במידול הנל(, מסייע בהפחתת
+ הסיכון בעיקר בקרב משקי בית עניים, אולם מאידך מקטין את היעילות שכן ההון
+ האגרגטיבי קטן.
+\end_layout
+
+\begin_layout Standard
+ב - כהמשך לכך, ניתן לראות מגרפים 
+\begin_inset Formula $e$
+\end_inset
+
+ ו-
+\begin_inset Formula $f$
+\end_inset
+
+ גם את עקומת לאפר - כפי שלמדנו במספר רב של מאמרים - ה-
+\begin_inset Formula $revenue$
+\end_inset
+
+ הולך וגדל אולם במידול הנל גם ההחזר, למעשה ככל שהמס גדל, ההכנסות גדלות עד
+ שמגיעים ל-
+\begin_inset Formula $peak$
+\end_inset
+
+ של עקומת הלאופר, ממנה סך הכל יש דעיכה בהכנסות עצמן - בכך הפגיעה ביעילות
+ שהזכרנו מתקיימת.
+\end_layout
+
+\begin_layout Standard
+ג - כפי שהראנו קודם, יש מעין דרגות סף בהן מתקיימים שינויים חדים בקצבים -
+ 
+\begin_inset Formula $threshold\,effects$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ד - החלוקה מחדש מהווה מעין ביטוח חברתי שעוזר בעיקר לשכבות העניות.
 \end_layout
 
 \end_body
