@@ -129,7 +129,7 @@ theorems-ams-extended
 \begin_layout Standard
 
 \series bold
-שאלה
+חלק
 \family roman
 \shape up
 \size normal
@@ -266,7 +266,7 @@ theorems-ams-extended
 
 \begin_layout Standard
 ה-
-\begin_inset Formula $Household\,asset\,accumulation\,equation$
+\begin_inset Formula $Household\:\,asset\,\:accumulation\,\:equation$
 \end_inset
 
 :
@@ -400,7 +400,7 @@ Y=K^{a}Z^{1-a}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Government\,income=\tau\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=T=Government\,spending
+Government\:\,income=\tau\times\int_{z_{min}}^{z_{max}}\int_{-\underline{a}}^{\infty}zg(a,z)dadz=T=Government\,\:spendings
 \]
 
 \end_inset
@@ -1856,7 +1856,7 @@ A'g=0
 \begin_layout Standard
 
 \series bold
-שאלה
+חלק
 \family roman
 \shape up
 \size normal
@@ -1911,6 +1911,39 @@ A'g=0
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Graphics
 	filename ../../Downloads/pasted9.png
 
@@ -1928,6 +1961,39 @@ A'g=0
 
 \begin_layout Standard
 
+\series bold
+שאלה
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+
 \bar under
 סעיף א:
 \end_layout
@@ -1937,55 +2003,154 @@ A'g=0
 \begin_inset Formula $Consumption\,risk$
 \end_inset
 
- לאי הוודאות המתקיימת בצריכת משקי הבית בשל תנודות בהכנסות, מיסוי וכו...
-\end_layout
-
-\begin_layout Standard
-נבחין כי גרף 
+ לאי הוודאות המתקיימת בצריכת משקי הבית בשל תנודות בהכנסות, מיסוי וכו.
+ נבחין כי גרף 
 \begin_inset Formula $g$
 \end_inset
 
- מראה קשר ישיר בין השונות בצריכה לבין גובה המס.
-\end_layout
-
-\begin_layout Standard
-ככל שהמס גבוה יותר, השונות בהכנסות הולכת וקטנה.
- ניתן לייחס זאת לכך שככל שהמס גבוה יותר כך מאידך יש גם יותר העברות 
+ מראה קשר ישיר בין גובה המס לבין השונות בצריכה.
+ ככל שהמס גבוה יותר, השונות בהכנסות הולכת וקטנה.
+ הסיבה להתנהגות זו היא שככל שהמס גבוה יותר כך החלק היחסי בהכנסה של משק הבית
+ הנובע מהעבודה קטן ומצד שני הסכום המועבר למשק הבית כ-
 \begin_inset Formula $Lump\,sum$
 \end_inset
 
- לאזרחים ובאופן פרוגרסיבי למשקי הבית העניים יותר.
-\end_layout
-
-\begin_layout Standard
-במצב זה, השונות בצריכה בין משקי הבית השונים קטנה יותר - משקי הבית העניים
- יותר עשויים להיות רגישים פחות לאי הוודאות, כי יש להם הכנסה בטוחה, משקי
- הבית העשירים יותר, רגישים יותר - יש התכנסות לשונות מסוימת.
-\end_layout
-
-\begin_layout Standard
-אולם כאשר המס נמוך יותר, ומשום התפלגות ההכנסות, משקי הבית העשירים רגישים
- פחות לאי וודאות ולסיכון, ועל כן יכולים לצרוך יותר, בעוד העניים רגישים יותר
- וצורכים פחות, בכך השונות גדלה.
-\end_layout
-
-\begin_layout Standard
-במקביל, מגרף 
-\begin_inset Formula $a$
+ גדל.
+ באופן הזה כל משקי הבית למעשה מחזיקים בוודאות גבוהה יותר לגבי הכנסותיהם
+ בעתיד והתלות ב-
+\begin_inset Formula $\text{z}$
 \end_inset
 
- ניתן לראות כי הצריכה האגרגטיבית רגישה כולה לעלייה במס, ניתן להבחין כי באחוזי
- מס גבוהים במיוחד )להוציא את הקצה הימני( הצריכה האגרגטיבית קטנה מהר יותר
- - ניתן ממש להבחין בשני שיפועים.
+ הופכת לחלשה יותר.
+ 
 \end_layout
 
 \begin_layout Standard
-ניתן אולי לשער כי החל משיעורי מס מסוימים, משקי הבית העשירים יותר נעשים בעצמם
- רגישים יותר לאי הוודאות שמתבטאת בצריכה.
-\end_layout
+במקרה הקצה שבו יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+100%
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מס על ההכנסה, יש וודאות מוחלטת למשקי הבית ואין להם כל סיכון להכנסה ולצריכה.
+ גם במקרה של פיטורין הכנסת משק הבית לא תשתנה כלל ולכן אין כל סיבה לבטח את
+ הצריכה.
+ במקרה ההפוך בו מס ההכנסה הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0%
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקבל את תמונת הראי, כל ההכנסה של משק הבית תלויה רק בערך של 
+\begin_inset Formula $\text{z}$
+\end_inset
 
-\begin_layout Standard
-ניתן לראות כי המעבר חד באופן יחסי.
+ ולכן שינוי ב-
+\begin_inset Formula $\text{z}$
+\end_inset
+
+ )פיטורין לדוגמה( משפיע דרמטית על היכולת של משק הבית לצרוך.
+ על כן, משק הבית יידרש לבטח את עצמו על מנת שיוכל לצרוך גם בעתיד בו 
+\begin_inset Formula $\text{z}$
+\end_inset
+
+ יקטן והתפלגות הצריכה תיווצר באופן ישיר מהתפלגות ההכנסות של משקי הבית.
 \end_layout
 
 \begin_layout Standard
@@ -2006,11 +2171,23 @@ A'g=0
 \begin_inset Formula $b$
 \end_inset
 
- מראה כי העושר האגרגטיבי הולך ופוחת, כאשר החל משיעור מסוים, קצב דעיכתו משתנה
- ונעשה גבוה אף יותר.
- הדבר נגרם משום שמס גבוה יותר מצמצם את ההכנסה הפיזיבילית לאחר מיסוי שניתן
- לחסוך.
- ה-
+ מראה כי העושר האגרגטיבי הולך ופוחת, כלומר כמות ההון הנחסך על ידי משקי הבית
+ קטנה.
+ החל משיעור מס מסוים, ערך ה-
+\begin_inset Formula $net\,return$
+\end_inset
+
+ מגיע לחסם של 
+\begin_inset Formula $r<\text{\ensuremath{\rho}}$
+\end_inset
+
+ שאותו הוא לא יכול לפרוץ )אחרת הפתרון יתבדר( מה שמביא את קצב דעיכת החיסכון
+ לגדול אף יותר.
+ הסיבה לדעיכה בצורך לחסוך מתאימה לתשובה בסעיף א' - הערך ההחזר הקבוע מהממשלה
+ עולה לצד ירידה של ההכנסה מעבודה מה שמביא את אי הוודאות בהכנסות להצטמצם.
+ עליית הוודאות בהכנסות מורידה את הצורך של משק הבית לבטח את עצמו מפני ירידה
+ בהכנסות מה שמקטין את הצורך בהחזקת הון וחסכונות.
+ כלומר, ה-
 \begin_inset Formula $lump\,sum$
 \end_inset
 
@@ -2023,25 +2200,7 @@ A'g=0
 \end_inset
 
 .
- במקביל מגרף 
-\begin_inset Formula $d$
-\end_inset
-
- ניתן להבחין כי ה-
-\begin_inset Formula $net\,return$
-\end_inset
-
- עולה עד שמשתטח באחוזי מס גבוהים.
-\end_layout
-
-\begin_layout Standard
-מאחר שההון האגרגטיבי קטן, הערך השולי של ההון גדל - הריבית וערך הכסף הולכים
- וגדלים.
-\end_layout
-
-\begin_layout Standard
-ניתן לראות משחק בין סעיף א לב - ככל שהמס גבוה יותר, ההחזר מקטין את הסיכון
- ואת החשש מאי הוודאות, אולם כך גם קטן הצורך בחסכון.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2062,13 +2221,21 @@ A'g=0
 \end_layout
 
 \begin_layout Standard
-א - אמנם מס גבוה יותר מסייע לחלוקה מחדש של משאבים )במידול הנל(, מסייע בהפחתת
- הסיכון בעיקר בקרב משקי בית עניים, אולם מאידך מקטין את היעילות שכן ההון
- האגרגטיבי קטן.
+א - המסקנה הבולטת ביותר מעבודה זו היא שאחוזי מס גבוהים מאטים ופוגעים בהתפתחות
+ המשק, אפשר לראות בבירור בגרפים )a(, )b(, )c( שישנו קשר מונוטוני יורד בין
+ גובה המס לבין התוצר המצרפי, ההון המצרפי והצריכה המצרפי, כולם יורדים ככול
+ שגדל המס על ההכנסות.
+ 
 \end_layout
 
 \begin_layout Standard
-ב - כהמשך לכך, ניתן לראות מגרפים 
+ב - במודל שבו המס חוזר כולו לטובת צריכה של האזרח, מס גבוהה מסייע בהפחתת
+ הסיכון בצריכה ומקטין את אי הוודאות בהכנסות, בעיקר בקרב משקי בית עניים.
+ ולמעשה בשורה התחתונה מיטיב עם משקי בית עניים.
+\end_layout
+
+\begin_layout Standard
+ג - כהמשך לכך, ניתן לראות מגרפים 
 \begin_inset Formula $e$
 \end_inset
 
@@ -2090,16 +2257,65 @@ A'g=0
 \end_layout
 
 \begin_layout Standard
-ג - כפי שהראנו קודם, יש מעין דרגות סף בהן מתקיימים שינויים חדים בקצבים -
- 
-\begin_inset Formula $threshold\,effects$
+ד - כאשר המיסוי עולה ומביא את ה-
+\begin_inset Formula $net\,return$
+\end_inset
+
+ לערך המקסימום האפשרי עבורו, נוצרת מעין דרגות סף בה מתקיימים שינויים חדים
+ בקצבים - 
+\begin_inset Formula $threshold\:\,effects$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-ד - החלוקה מחדש מהווה מעין ביטוח חברתי שעוזר בעיקר לשכבות העניות.
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סעיף ד:
+\end_layout
+
+\begin_layout Standard
+המגבלות המרכזיות של התרגיל הן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+סעיף ה:
+\end_layout
+
+\begin_layout Standard
+אחת ההנחות המשמעותיות והבעייתיות במודל היא חוסר היכולת של משק הבית לבחור
+ אם הוא רוצה להיכנס לשוק העבודה או לא.
+ למעשה, אין מידול של 
+\begin_inset Quotes eld
+\end_inset
+
+עלות
+\begin_inset Quotes erd
+\end_inset
+
+ לעבודה ואין מידול של ערך לזמן חופשי.
+ ככל הנראה שילוב של עלות לשעות עבודה )באופן דומה לעלות עבודה שנידונה במספר
+ מקרים לאורך הקורס( יכולה לייצר אפקט נוסף התלוי בערך מס ההכנסה, אפקט שבו
+ יותר אנשים בוחרים שלא לעבוד כאשר ערך המס עולה.
+ כלומר, בהינתן מידול כזה, ייתכן ועלית המס תייצר אפקט חזק ומשמעותי של עליית
+ אבטלה ותביא לפגיעה חריפה יותר בתוצר.
 \end_layout
 
 \end_body
